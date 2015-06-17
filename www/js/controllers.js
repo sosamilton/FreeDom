@@ -1,7 +1,11 @@
 angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
-  // Form data for the login modal
+  $('.item-complex').click(function(){ 
+      $('.item-complex').removeClass('activated'); 
+      $(this).toggleClass('activated');
+  });
+  /*// Form data for the login modal
   $scope.loginData = {};
 
   // Create the login modal that we will use later
@@ -30,7 +34,7 @@ angular.module('starter.controllers', [])
     $timeout(function() {
       $scope.closeLogin();
     }, 1000);
-  };
+  };*/
 })
 
 .controller('PlaylistsCtrl', function($scope) {

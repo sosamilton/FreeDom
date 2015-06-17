@@ -1,1 +1,72 @@
-/* Empty. Add your own CSS if you like */
+/* encabezado */
+.bar.bar-stable{
+	border:none;
+	border-bottom: 3px solid #F25A00;
+}
+/* menu */
+.bar-stable .button.button-clear{
+	color: #F25A00;
+}
+.menu{
+	background-color: #F25A00;
+}
+.list {
+  margin-top: 30%;
+}
+.item-complex .item-content, .item-radio .item-content{
+	color: #F8F8F8;
+	background-color: #F25A00;
+}
+.item{
+	border-color: #F8F8F8;
+}
+.item.active, .item.activated, .item-complex.active .item-content, .item-complex.activated .item-content, .item .item-content.active, .item .item-content.activated{
+	background-color: #0098f2;
+	border: none;
+}
+/* boton inicio */
+
+.boton {
+  display: block;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 0 0 12px #DA0000 inset;
+  line-height: 300px;
+  color: #979797;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  position: absolute;
+  margin-left: 25%;
+  top: 50%; 
+  margin-top: 3%;
+}
+
+.boton .reveal {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transform: scale(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+  display: block;
+  background: #197723;
+  line-height: 300px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+}
+
+.boton:hover {
+  box-shadow: 0 0 0 0px #0B2A6E inset;
+}
+
+.boton:hover .reveal {
+  transform: scale(1);
+}
